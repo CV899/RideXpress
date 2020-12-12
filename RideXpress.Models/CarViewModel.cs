@@ -26,14 +26,20 @@ namespace RideXpress.Models
         {
             get
             {
-                return "";
+                if(this.IsAutomatic)
+                {
+                    return "Automatic";
+                } else
+                {
+                    return "Manual";
+                }
             }
         }
         public double DailyRate
         {
             get
             {
-                return 0.0;
+                return (this.HourlyRate * 10.0);
             }
         }
     }
