@@ -29,6 +29,7 @@ namespace RideXpress.Models
                 if(this.IsAutomatic)
                 {
                     return "Automatic";
+
                 } else
                 {
                     return "Manual";
